@@ -10,11 +10,10 @@ def main():
     in_datfile = DatFile()
     in_datfile.read(input_filename)
     
-    # NOTE: it's specific only for v0.1.0 izmiran module.
-    # NOTE: reverse field directly
-    in_datfile.data_list_of_records.reverse()
-
-    out_datfile = in_datfile.avg(period, start_idx=start_idx, end_idx=end_idx)
+    reversed_datfile = in_datfile.reverse()
+    filtered_datfile = reversed_datfile.filter(column_idx=0, min_val=90.0, max_val=100.0)
+    out_datfile = filtered_datfile.avg(period, start_idx=start_idx, end_idx=end_idx)
+    
     out_datfile.write(output_filename)
 
 if __name__ == '__main__':
