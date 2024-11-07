@@ -1,0 +1,3 @@
+xarray
+scipy
+netcdf4
