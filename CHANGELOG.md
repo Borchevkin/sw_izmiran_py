@@ -12,6 +12,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- dat_averager: handle multiply files.
+
+
+## [0.1.2] - 2024-11-07
+
+### Added
+
 - Add all legazy projects for IZMIRAN.
 
 
