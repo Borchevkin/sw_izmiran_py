@@ -28,6 +28,11 @@ Before using any of script install requirements by:
 pip install -r requirements.txt
 ```
 
+If used `izmiran` module you should update it:
+
+```bash
+```
+
 ## Developing Process
 
 * Use feature-flow.
